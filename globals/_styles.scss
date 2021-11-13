@@ -1,7 +1,8 @@
 
 // CORES
 $PrimaryGray: #212333;
-$white: #fff;
+$White: #fff;
+$Red: #DB3232;
 
 // CONFIGURAÇÕES GERAIS
 * {
@@ -38,15 +39,3 @@ img, span {
     display: block;
 }
 
-// WRAPPER PRINCIPAL
-.gc-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 1440px;
-    padding: 120px 32px;
-
-    @media screen and (max-width: 700px) {
-      padding: 120px 8px;
-    }
-}

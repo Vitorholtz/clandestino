@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-color:#1a1a1a;
+    background-color:#0A0A0A;
 }
 
 .hero-wrapper {
@@ -14,12 +14,12 @@
     max-width: 1440px;
     height: 100vh;
     margin: auto;
-    color: $white;
+    color: $White;
 
     .cl-hero-logo {
         display: flex;
         justify-content: center;
-        width: 800px;
+        max-width: 800px;
         animation: logoFade 1s ease-in-out;
 
         .logo-clandestino {
@@ -31,7 +31,7 @@
         font-size: 48px;
         font-family: 'Bebas Neue';
         letter-spacing: 1px;
-        color: $white;
+        color: $White;
         animation: subtitleFade 1s ease-in-out;
         animation-delay: 1s;
         transform: translateY(-20px);
@@ -58,12 +58,3 @@
         opacity: 1;
     }
   }
-
-
-
-.test {
-    margin: auto;
-    height: 2000px;
-    width: 1440px;
-    background-color: gray;
-}

@@ -16,7 +16,7 @@
     .header-content-wrapper {
         display: flex;
         gap: 32px;
-        color: $white;
+        color: $White;
         font-family: 'Bebas Neue';
         font-size: 24px;
         letter-spacing: 1px;
@@ -57,6 +57,8 @@
         }
     }
 
+    // SOCIAL MEDIA DISPLAY
+
     .cl-social-media-display {
         display: flex;
         flex-direction: column;
@@ -87,7 +89,6 @@
             height: 24px;
 
             &:hover {
-
                 filter: invert(59%) sepia(85%) saturate(1620%) hue-rotate(339deg) brightness(90%) contrast(143%);
             }
 

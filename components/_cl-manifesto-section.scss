@@ -1,0 +1,40 @@
+.cl-manifesto-section {
+    width: 100%;
+    background-image: url("img/cl-manifesto-bg.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:#0A0A0A;
+}
+
+.cl-manifesto-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    padding: 16px;
+
+    .manifesto-text-title {
+        font-family: 'Bebas Neue';
+        font-size: 48px;
+        letter-spacing: 1px;
+        color: $Red;
+    }
+
+    .manifesto-text-container {
+        max-width: 600px;
+        margin: 32px 0;
+
+        .manifesto-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            color: $White;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1.6;
+
+        }
+    }
+}

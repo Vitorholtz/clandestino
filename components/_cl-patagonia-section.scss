@@ -1,0 +1,40 @@
+.cl-patagonia-section {
+    width: 100%;
+    background-image: url("img/cl-patagonia-bg.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:#0A0A0A;
+}
+
+.cl-patagonia-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 1440px;
+    max-width: 1440px;
+    height: 100vh;
+    color: white;
+
+    .cl-patagonia-map {
+        width: 200px;
+        align-self: left;
+    }
+    .cl-patagonia-title {
+        font-family: 'Bebas Neue';
+        font-size: 48px;
+        letter-spacing: 1px;
+        color: $White;
+    }
+
+    .cl-patagonia-text {
+        max-width: 960px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: $White;
+        letter-spacing: 1px;
+        line-height: 1.6;
+    }
+}

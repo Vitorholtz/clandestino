@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0A0A0A;
+}
+
+html {
+  font-family: 'GlobotipoTextoRegular', sans-serif;
+  color: #212333;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+img, span {
+  display: block;
+}
+
+.gc-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  max-width: 1440px;
+  padding: 120px 32px;
+}
+
+@media screen and (max-width: 700px) {
+  .gc-content-wrapper {
+    padding: 120px 8px;
+  }
+}
+
+.cl-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(29, 29, 29, 0.747);
+  position: absolute;
+  top: 0;
+}
+
+.cl-header .header-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  color: #fff;
+  font-family: 'Bebas Neue';
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.cl-header .header-content-wrapper .header-list-item::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: white;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.cl-header .header-content-wrapper .header-list-item:hover::after {
+  width: 90%;
+}
+
+.cl-hero {
+  background-image: url("img/cl-hero-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #1a1a1a;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  color: #fff;
+}
+
+.test {
+  margin: auto;
+  height: 2000px;
+  width: 1440px;
+  background-color: gray;
+}
+/*# sourceMappingURL=main.css.map */

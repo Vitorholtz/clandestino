@@ -8,13 +8,58 @@
 
 .hero-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 1440px;
     height: 100vh;
     margin: auto;
     color: $white;
+
+    .cl-hero-logo {
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        animation: logoFade 1s ease-in-out;
+
+        .logo-clandestino {
+            width: 100%;
+        }
+    }
+
+    .cl-hero-subtitle {
+        font-size: 48px;
+        font-family: 'Bebas Neue';
+        letter-spacing: 1px;
+        color: $white;
+        animation: subtitleFade 1s ease-in-out;
+        animation-delay: 1s;
+        transform: translateY(-20px);
+        animation-fill-mode: backwards;
+    }
 }
+
+@keyframes logoFade {
+    from {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes subtitleFade {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+
 
 .test {
     margin: auto;

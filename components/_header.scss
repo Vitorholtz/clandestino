@@ -11,6 +11,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(163, 163, 163, 0.18);
+    z-index: 1000;
 
     .header-content-wrapper {
         display: flex;
@@ -43,16 +44,15 @@
 }
 
     //scroll
-
     .scroll-down {
-        .cl-header {
+        header {
             transform: translate3d(0, -100%, 0);
             transition: .3s;
         }
     }
 
     .scroll-up {
-        .cl-header {
+        header {
             transition: .3s;
         }
     }

@@ -1,8 +1,8 @@
 .cl-buy-section {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 48px 0;
+    margin: 160px 0;
 
     .poster-and-info-container {
         display: flex;
@@ -71,6 +71,7 @@
                 margin-top: auto;
                 background: rgb(209,20,20);
                 background: linear-gradient(172deg, rgba(209,20,20,1) 0%, rgba(105,10,10,1) 100%);
+                border-radius: 4px;
             }
         }
     }

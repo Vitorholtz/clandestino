@@ -382,7 +382,7 @@ img, span {
 .cl-trailer-section {
   max-width: 1440px;
   height: 100vh;
-  margin: 32px auto;
+  margin: 160px auto;
 }
 
 .cl-trailer-title {
@@ -391,6 +391,7 @@ img, span {
   font-size: 48px;
   letter-spacing: 1px;
   color: #fff;
+  margin: 64px auto;
 }
 
 .cl-manifesto-section {
@@ -441,14 +442,14 @@ img, span {
 }
 
 .cl-buy-section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  margin: 48px 0;
+  margin: 160px 0;
 }
 
 .cl-buy-section .poster-and-info-container {
@@ -537,5 +538,71 @@ img, span {
   margin-top: auto;
   background: #d11414;
   background: linear-gradient(172deg, #d11414 0%, #690a0a 100%);
+  border-radius: 4px;
+}
+
+.cl-footer-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 160px auto;
+}
+
+.cl-footer-section .social-media-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+
+.cl-footer-section .social-media-footer-container .social-media-footer-title {
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.cl-footer-section .social-media-footer-container .social-media-footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+
+.cl-footer-section .cl-labels-container {
+  margin: 160px auto 80px;
+}
+
+.cl-footer-section .cl-labels-container .labels-img {
+  width: 100%;
+}
+
+.cl-footer-section .cl-credits-container {
+  margin: auto;
+}
+
+.cl-footer-section .cl-credits-container .credits-img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

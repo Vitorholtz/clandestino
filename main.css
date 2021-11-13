@@ -114,6 +114,86 @@ img, span {
   transition: .3s;
 }
 
+.cl-social-media-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  position: fixed;
+  right: 8%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 64px;
+  padding: 24px;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.527);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(163, 163, 163, 0.18);
+  z-index: 1000;
+  -webkit-animation: smFade 1s ease-in;
+          animation: smFade 1s ease-in;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.cl-social-media-display .sm-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.cl-social-media-display .sm-icon:hover {
+  -webkit-filter: invert(59%) sepia(85%) saturate(1620%) hue-rotate(339deg) brightness(90%) contrast(143%);
+          filter: invert(59%) sepia(85%) saturate(1620%) hue-rotate(339deg) brightness(90%) contrast(143%);
+}
+
+.cl-social-media-display .sm-icon .icon-img {
+  width: 100%;
+}
+
+@-webkit-keyframes smFade {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smFade {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .cl-hero {
   background-image: url("img/cl-hero-bg.jpg");
   background-size: cover;

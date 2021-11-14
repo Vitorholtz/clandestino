@@ -1,6 +1,6 @@
+// EFEITO HEADER
 const body = document.body;
 let lastScroll = 0;
-
 
 window.addEventListener('scroll', () =>{
     
@@ -21,3 +21,17 @@ window.addEventListener('scroll', () =>{
 
     lastScroll = currentScroll
 })
+
+// EFEITO TEXTO
+
+let ReadmoreManifestoBtn = document.querySelector('.read-more-button');
+let ManifestoSection = document.querySelector('.cl-manifesto-wrapper');
+let ManifestoTextFade = document.querySelector('.manifesto-fade-black-bottom');
+
+ReadmoreManifestoBtn.addEventListener ('click', () => {
+
+    ManifestoSection.classList.toggle('cl-manifesto-wrapper--opened');
+    ReadmoreManifestoBtn.classList.toggle('read-more-button--up');
+    ManifestoTextFade.classList.toggle('manifesto-fade-black-bottom--opened');
+    
+});

@@ -127,7 +127,19 @@
         animation-delay: 1.5s;
         animation-fill-mode: backwards;
 
-        @media screen and (max-width: 600px) {
+          @media screen and (max-width: 1200px) {
+            right: 4%;
+          }
+
+          @media screen and (max-width: 1100px) {
+            right: 2%;
+          }
+
+          @media screen and (max-width: 930px) {
+            top: 85%;
+          }
+
+          @media screen and (max-width: 600px) {
             display: none;
           }
 
@@ -135,8 +147,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
 
             &:hover {
                 filter: invert(59%) sepia(85%) saturate(1620%) hue-rotate(339deg) brightness(90%) contrast(143%);

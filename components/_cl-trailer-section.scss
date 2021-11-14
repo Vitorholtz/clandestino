@@ -1,7 +1,7 @@
 .cl-trailer-section {
     max-width: 1440px;
-    height: 100vh;
     margin: 160px auto;
+    border: 1px red solid;
 }
 
 .cl-trailer-title {
@@ -10,5 +10,13 @@
     font-size: 48px;
     letter-spacing: 1px;
     color: $White;
-    margin: 64px auto;
+    margin: 16px auto;
+
+    @media screen and (max-width: 800px) {
+        transform: translateY(100px);
+      }
+
+      @media screen and (max-width: 600px) {
+        transform: translateY(140px);
+      }
 }

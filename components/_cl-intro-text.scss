@@ -10,17 +10,23 @@
 .cl-intro-text-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 1440px;
     padding: 16px;
+    // height: 600px;
+    // overflow-y: hidden;
+    // position: relative;
 
     .intro-text-title {
         font-family: 'Bebas Neue';
-        font-size: 48px;
+        font-size: 40px;
         letter-spacing: 1px;
         color: $Red;
+        
+        @media screen and (max-width: 600px) {
+            font-size: 32px;
+          }
     }
 
     .intro-text-container {
@@ -29,12 +35,25 @@
 
         .intro-text {
             font-family: 'Roboto', sans-serif;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 300;
             color: $White;
             text-align: center;
             letter-spacing: 1px;
             line-height: 1.6;
+
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+              }
         }
     }
+
+    // .text-fade-black {
+    //     height: 400px;
+    //     width: 100%;
+    //     position: absolute;
+    //     bottom: 0;
+    //     background: rgb(10,10,10);
+    //     background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%);
+    // }
 }

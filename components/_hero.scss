@@ -4,6 +4,10 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-color:#0A0A0A;
+
+    @media screen and (max-width: 600px) {
+        background-position: 26%;
+      }
 }
 
 .hero-wrapper {
@@ -36,6 +40,11 @@
         animation-delay: 1s;
         transform: translateY(-20px);
         animation-fill-mode: backwards;
+
+        @media screen and (max-width: 600px) {
+            font-size: 24px;
+            transform: translateY(0px);
+          }
     }
 }
 

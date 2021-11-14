@@ -3,14 +3,23 @@
     display: flex;
     justify-content: center;
     margin: 160px 0;
-    display: none;
 
     .poster-and-info-container {
         display: flex;
-        gap: 16px;
+        gap: 32px;
+        padding: 0 16px;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+          }
 
         .cl-poster {
             width: 400px;
+
+            @media screen and (max-width: 800px) {
+                width: 300px;
+              }
 
             .cl-poster-img {
                 width: 100%;
@@ -21,16 +30,32 @@
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width: 600px) {
+                align-items: center;
+              }
+
             .poster-title {
+                transform: translateX(-13px);
                 width: 300px;
+
+                @media screen and (max-width: 800px) {
+                    width: 200px;
+                  }
+
+                  @media screen and (max-width: 600px) {
+                    transform: translateX(0);
+                  }
             }
 
             .subtitle-container {
-                padding-left: 16px;
                 display: flex;
                 align-items: center;
                 gap: 16px;
                 color: $White;
+
+                @media screen and (max-width: 800px) {
+                    font-size: 14px;
+                  }
 
                 .divider {
                     height: 8px;
@@ -41,23 +66,39 @@
 
             .poster-description {
                 max-width: 400px;
-                padding: 16px 0px 32px 16px;
+                padding: 16px 0px 32px 0px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 16px;
                 font-weight: 300;
                 color: $White;
                 letter-spacing: 1px;
                 line-height: 1.6;
+
+                @media screen and (max-width: 800px) {
+                    font-size: 14px;
+                  }
+
+                  @media screen and (max-width: 600px) {
+                    text-align: center;
+                  }
+
             }
 
             .poster-duration {
-                padding-left: 16px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 16px;
                 font-weight: 300;
                 color: $White;
                 letter-spacing: 1px;
                 line-height: 1.6;
+
+                @media screen and (max-width: 800px) {
+                    font-size: 14px;
+                  }
+
+                  @media screen and (max-width: 800px) {
+                    padding-bottom: 16px;
+                  }
             }
 
             .poster-button {
@@ -73,6 +114,10 @@
                 background: rgb(209,20,20);
                 background: linear-gradient(172deg, rgba(209,20,20,1) 0%, rgba(105,10,10,1) 100%);
                 border-radius: 4px;
+
+                @media screen and (max-width: 800px) {
+                    width: 300px;
+                  }
             }
         }
     }

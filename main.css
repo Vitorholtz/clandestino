@@ -235,7 +235,7 @@ img, span {
   font-size: 48px;
   font-family: "Bebas Neue";
   letter-spacing: 1px;
-  color: #fff;
+  color: #e9e3e3;
   -webkit-animation: subtitleFade 1s ease-in-out;
           animation: subtitleFade 1s ease-in-out;
   -webkit-animation-delay: 1s;
@@ -296,6 +296,12 @@ img, span {
   background-repeat: no-repeat;
   background-color: #0A0A0A;
   position: relative;
+  margin-top: 160px;
+}
+@media screen and (max-width: 800px) {
+  #cl-intro-text-section {
+    margin-top: 32px;
+  }
 }
 #cl-intro-text-section .intro-fade-black-bottom {
   height: 400px;
@@ -360,7 +366,7 @@ img, span {
   justify-content: center;
   width: 64px;
   height: 64px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 160px auto;
   border-radius: 80px;
   background: rgba(0, 0, 0, 0.527);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -407,7 +413,7 @@ img, span {
 }
 @media screen and (max-width: 600px) {
   .cl-patagonia-text-wrapper .cl-patagonia-map {
-    width: 100px;
+    display: none;
   }
 }
 .cl-patagonia-text-wrapper .cl-patagonia-title {
@@ -439,6 +445,7 @@ img, span {
 
 #cl-trailer-section {
   max-width: 1440px;
+  height: 600px;
   margin: 0 auto;
 }
 
@@ -448,11 +455,12 @@ img, span {
   font-size: 32px;
   letter-spacing: 1px;
   color: #fff;
-  margin: 16px auto;
+  margin: 160px auto 24px auto;
 }
 @media screen and (max-width: 800px) {
   .cl-trailer-title {
     transform: translateY(100px);
+    margin: 24px auto 24px auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -470,6 +478,11 @@ img, span {
   background-color: #0A0A0A;
   position: relative;
   margin: 80px 0 20px 0;
+}
+@media screen and (max-width: 800px) {
+  #cl-manifesto-section {
+    margin: 0 0 20px 0;
+  }
 }
 #cl-manifesto-section .fade-black-top {
   height: 400px;

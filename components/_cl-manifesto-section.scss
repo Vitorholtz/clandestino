@@ -8,6 +8,10 @@
     position: relative;
     margin: 80px 0 20px 0;
 
+    @media screen and (max-width: 800px) {
+        margin: 0 0 20px 0;
+    }
+
     .fade-black-top {
         height: 400px;
         width: 100%;
@@ -70,6 +74,7 @@
             text-align: center;
             letter-spacing: 1px;
             line-height: 1.6;
+
             @media screen and (max-width: 600px) {
                 font-size: 14px;
             }
